@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ReuseHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>ReuseHub</h1>
+  <p>Share your used items with people across the world 🌍</p>
+
+  <button onclick="showForm()">List an Item</button>
+
+  <div id="formBox" style="display:none;">
+    <h2>Add Item</h2>
+
+    <input type="text" id="itemName" placeholder="Item name"><br><br>
+    <input type="text" id="condition" placeholder="Condition"><br><br>
+    <textarea id="description" placeholder="Description"></textarea><br><br>
+<input type="file" id="image" accept="image/*"><br><br>
+    <button onclick="addItem()">Add</button>
+  </div>
+
+  <h2>Available Items</h2>
+  <div id="items"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
